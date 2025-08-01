@@ -1,0 +1,27 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# generated JetBrains IDE files
+.idea/
+
+# uv lock files
+uv.lock
+
+#jupyter files
+*.ipynb
+
+# enviroment variables file
+.env
+.env.api
+
+#databse and logs
+database_alumnos/
+database_logs/
