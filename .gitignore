@@ -21,6 +21,8 @@ uv.lock
 # enviroment variables file
 .env
 .env.api
+.env.virtual_sessions_filter
+.env.student_groups_filter
 
 #databse and logs
 database_alumnos/
