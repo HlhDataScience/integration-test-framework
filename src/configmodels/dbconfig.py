@@ -28,8 +28,14 @@ import requests  # type: ignore
 import yaml  # type: ignore
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
+<<<<<<< HEAD
 DB_CONFIG_QUERIES_PATH = ROOT_DIR / "dbconfigqueries.yaml"
 DB_FETCHING_CONFIG_PATH = ROOT_DIR / "dbfetchingconfig.yaml"
+=======
+CONFIG_DIR = ROOT_DIR / "yaml_configurations" /"database_configs"
+DB_CONFIG_QUERIES_PATH = CONFIG_DIR  / "dbconfigqueries.yaml"
+DB_FETCHING_CONFIG_PATH = CONFIG_DIR  / "dbfetchingconfig.yaml"
+>>>>>>> c117fbf (added the work from the last week)
 
 
 class DBConfigQueries(BaseSettings):
@@ -202,7 +208,11 @@ class APIEnvVariables(BaseSettings):
 
     Attributes:
         model_config (ClassVar[SettingsConfigDict]): Pydantic settings configuration
+<<<<<<< HEAD
             specifying the environment file location (.env.api)
+=======
+            specifying the environment file location (.env.db)
+>>>>>>> c117fbf (added the work from the last week)
         API_URL (str): Base URL for the API endpoint
         API_KEY (str): Authentication key for API access
         BEARER_TOKEN (dict[str, str]): HTTP __headers to include in API requests
@@ -211,7 +221,11 @@ class APIEnvVariables(BaseSettings):
         parse_headers: Field validator for parsing HEADERS from JSON string format
     """
 
+<<<<<<< HEAD
     model_config: ClassVar[SettingsConfigDict] = SettingsConfigDict(env_file=ROOT_DIR / ".env.api")
+=======
+    model_config: ClassVar[SettingsConfigDict] = SettingsConfigDict(env_file=ROOT_DIR / ".env.db")
+>>>>>>> c117fbf (added the work from the last week)
     API_URL: str
     BEARER_TOKEN: str
 

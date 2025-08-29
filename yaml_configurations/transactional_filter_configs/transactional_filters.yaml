@@ -1,0 +1,150 @@
+virtual_sessions:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+  body_parameters:
+    FechaDesde: '2022-01-21 00:00:00.000'
+
+student_groups:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+  body_parameters:
+    FechaDesde: '2022-01-21 00:00:00.000'
+
+unir_email:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+
+events:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+  body_parameters:
+    FechaDesde: '2022-01-21 00:00:00.000'
+
+exam_registrations:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+  body_parameters:
+    idAlumno: "##student_id##"
+
+exams:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+  body_parameters: "{id}"
+
+teaching_start:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+
+mentors:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+
+acknowledgements:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+  body_parameters:
+    IdIntegracionAlumno: "placeholder"
+    IdPlan: "placeholder"
+    IdIdioma: 1
+    DatosUniversidad: false
+    DatosAlumno: false
+    FotoAlumno: false
+    DatosEstudio: false
+    DatosViasAcceso: false
+    DatosResumenCreditos: false
+    DatosCalificaciones: false
+    DatosAsignaturas: true
+    asignaturasSuperadas: true
+    asignaturasNoSuperadas: true
+    asignaturasMatriculadas: true
+    asignaturasNoPresentadas: true
+    todasAsignaturas: true
+    DatosConvocatorias: true
+    TodosReconocimientos: true
+    Hitos: false
+    Matriculas: false
+    ResumenSituacion: false
+    Especializaciones: false
+    DatosExpediente: false
+    ListaMatriculas: [ ]
+    ListaEspecializaciones: [ ]
+
+
+tfe:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+  body_parameters:
+    - "##student_id##"
+
+qualifications:
+  absolute_db_path: "database_alumnos/alumnos.sqlite"
+  sqlite_filter_query: |
+    SELECT "idRefIntegracionAlumno"
+    FROM expedientes
+    WHERE "estadoDisplayName" = 'ABIERTO'
+    AND "idRefTipoEstudio" IN ('10', '12', '11')
+  body_parameters:
+    IdIntegracionAlumno: "##student_id##"
+    IdPlan: "##plan_id##"
+    DatosUniversidad: false
+    DatosAlumno: false
+    FotoAlumno: false
+    DatosEstudio: false
+    DatosViasAcceso: false
+    DatosResumenCreditos: false
+    DatosCalificaciones: false
+    DatosAsignaturas: true
+    asignaturasSuperadas: false
+    asignaturasNoSuperadas: false
+    asignaturasMatriculadas: false
+    asignaturasNoPresentadas: false
+    todasAsignaturas: true
+    DatosConvocatorias: false
+    TodosReconocimientos: false
+    Hitos: false
+    Matriculas: false
+    ResumenSituacion: false
+    Especializaciones: false
+    DatosExpediente: false
+    ListaMatriculas: []
+    ListaEspecializaciones: []

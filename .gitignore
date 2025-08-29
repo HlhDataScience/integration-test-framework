@@ -19,6 +19,7 @@ uv.lock
 *.ipynb
 
 # enviroment variables file
+<<<<<<< HEAD
 .env
 .env.api
 .env.virtual_sessions_filter
@@ -27,3 +28,19 @@ uv.lock
 #databse and logs
 database_alumnos/
 database_logs/
+=======
+.env.transactional
+.env.db
+#databse and logs
+database_alumnos/
+database_logs/
+
+# excels y txt
+
+*.xlsx
+*.xlsx:Zone.Identifier
+*.txt
+
+#program testing directory
+program_testing/
+>>>>>>> c117fbf (added the work from the last week)
