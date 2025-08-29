@@ -1,6 +1,0 @@
-sqlite_filter_query: """
-  SELECT "idRefIntegracionAlumno"
-  FROM expedientes
-  WHERE "estadoDisplayName" = 'ABIERTO'
-  AND "idRefTipoEstudio" IN ('10', '12', '11')
-  """

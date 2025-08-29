@@ -19,7 +19,6 @@ uv.lock
 *.ipynb
 
 # enviroment variables file
-<<<<<<< HEAD
 .env
 .env.api
 .env.virtual_sessions_filter
@@ -43,4 +42,4 @@ database_logs/
 
 #program testing directory
 program_testing/
->>>>>>> c117fbf (added the work from the last week)
+*.xlsxZone.Identifier
