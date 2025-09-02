@@ -190,8 +190,8 @@ async def worker(queue, bot_token, crosscutting_token, answers, answers_lock):
 
 async def main():
     # Bot token and configuration
-    bot_token = "dGFpQSOk5VA.UUEkyKPpQ8e8w6X6xG6WAj660AIsr8zc7yjHO56LNws"
-    crosscutting_token = "13DQpoa0MWw4Z-WQpJgNB6FEB6x4YV1WX3WFZE1YgAf6ErxZgCmevCzzGwrer0oxAutwgyOsBNBNJ10eEcZroZqXLbKpxw70ukRtns1BtQxPc4mNmJS5aczEzRr1k1Vwd-XOdriSIGz-Zt_DGWUtM4zkVKJSqQWtpw0iq8lkMwag_jKwkOSLthD-vuB8WKfUGuk8Ic5xRqbgEJAoTqQH6W4OaEvuwjME2QkEBCmt1wGGbvbKWzlngndPZfR_fISZD0Io2PLae0b0rIF_x1tXYM-7Cy0QCiLVv4g2cjTVMN9KD2HFZ-7HwgbKmNJJERDktT678FbcleTw_w_dAJEKYc6NFEVk28VUHrK7vxGM3lwh-kJagIB4HpsfBgwV04FaVGlbNTauS8xalrFa2BT8lvrVP4NasWrm3OeU3m78QDBiy6K4NzK6zpdN12J_jWS2W9JRfWKZVpp4hFpkEO8pI3jzB3e38LuCyE93xPkqxXJ9QDMyNny8guUBNKzBzltnSk7PWPBRN7Qnfq1Ez0KSZDov5zu8uQIdd5mlP4Ocldo"
+    bot_token = ""
+    crosscutting_token = ""
 
     try:
         num_workers = 20
@@ -241,3 +241,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
