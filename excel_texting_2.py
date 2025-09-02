@@ -154,8 +154,8 @@ class BotFrameworkClient:
 
 async def main():
     # Bot token
-    bot_token = "dGFpQSOk5VA.UUEkyKPpQ8e8w6X6xG6WAj660AIsr8zc7yjHO56LNws"
-    crosscutting_token = "YxXUHWqjHnHdD3zj3PRiPUYc3uVNnkOXOx5R59yt5CJ0s_bhSTOaf0DGQ4FFchQC6N3mGI715ZfFC1gaTPeXP2qmNkB8Vm1dOe2S-QfnO5Z0pjuSgs0A5LRgRf9xo4P9OzkOx3QMkqSLBa7ClZD80uT0GuSoh2EXFslUKPFhNk2QjDT3DRUnwIpCXfOOUZeZXlIvZ3dWNwU6rO8HTaNTWyJip5U1okCTTtLsv6JD4QAluYogr9NeseyA3vDN8RVQ8eb7vfAuQxiOoyxPB4looLNKWQGvNHpp5GCqbEPaFtyMDifGCrxXxHZvM4rzk59HgusD6BD6nuNujq2tgUZxH2HUqAoAn88S9iVZ-WvX9Q2FRkBanuzHhZmOJlTvjlPRtut0zpdnnpF4KTqiCnIJtx5KiGya99ZNlz8OfJelpTAmBk4HTQ5izYT1eCFLNPaAvKMlXFB9qK4ymtbMcsDB02ZgeTimgtNHoxYU5UToe2J59b2Sd4ZvNmw_qtjgCjqoytPhLhKFgugmqeScr46caOO3_awxkwtxy7Q132yABAI5Ry8g9shCWiGkf_ol2kVk"
+    bot_token = ""
+    crosscutting_token = ""
 
     client = BotFrameworkClient(bot_token, crosscutting_token)
 
@@ -218,4 +218,5 @@ async def main():
 
 
 if __name__ == "__main__":
+
     asyncio.run(main())
